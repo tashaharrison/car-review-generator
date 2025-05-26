@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Car Review Q&A</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    label { display: block; margin-top: 1em; }
+    input, textarea { width: 100%; padding: 0.5em; margin-top: 0.5em; }
+    button { margin-top: 1em; padding: 0.5em 1em; }
+    #result, #proscons-result {
+      margin-top: 2em;
+      white-space: pre-wrap;
+      border: 2px dashed #2ecc40;
+      border-radius: 8px;
+      padding: 1em;
+      background: #f8fff8;
+      color: #222;
+      min-height: 2em;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Car Review Generator</h1>
+  <h2>Ask a Question</h2>
+  <form id='qa-form'>
+    <label for='carModel'>Car Make & Model</label>
+    <input type='text' id='carModel' name='carModel' placeholder='e.g. Audi A1' required />
+
+    <label for='question'>Your Question</label>
+    <textarea id='question' name='question' rows='3' placeholder='e.g. How reliable is this car?' required></textarea>
+
+    <button type='submit'>Ask</button>
+  </form>
+  <div id='result' style='display:none;'></div>
+
+  <div style='margin-top:3em;'>
+    <h2>Pros & Cons Generator</h2>
+    <form id='proscons-form'>
+      <label for='proscons-carModel'>Car Make & Model</label>
+      <input type='text' id='proscons-carModel' name='proscons-carModel' placeholder='e.g. Audi A1' required />
+      <button type='submit'>Generate Pros & Cons</button>
+    </form>
+    <div id='proscons-result' style='display:none;'></div>
+  </div>
+
+  <script src='main.js'></script>
+</body>
+</html>
