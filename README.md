@@ -8,15 +8,15 @@ This project is a full-stack Node.js application that uses OpenAI to analyze and
 - Simple web frontend and REST API backend.
 
 ## Prerequisites
-- Node.js (v18 or newer recommended)
+- Node.js (v20 or newer recommended)
 - npm
 - An OpenAI API key ([get one here](https://platform.openai.com/account/api-keys))
 
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone <repo-url>
-   cd aiPlayground
+   git clone git@github.com:tashaharrison/car-review-generator.git
+   cd car-review-generator
    ```
 2. Install dependencies:
    ```bash
